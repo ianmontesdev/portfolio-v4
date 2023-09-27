@@ -1,0 +1,62 @@
+:root {
+  --yellow: #fdd538;
+  --dark: #121212;
+  --medium: #454545;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#btn-switch {
+  background-color: var(--medium);
+  border-radius: 15px;
+  position: relative;
+  width: 55px;
+  height: 31px;
+  cursor: pointer;
+}
+
+#btn-switch div {
+  background-color: var(--yellow);
+  border-radius: 50%;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 3px;
+  left: 3px;
+  transition: 100ms all ease-in-out;
+}
+
+#web-container,
+#design-container {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--dark);
+  transition: 300ms all ease-in-out;
+}
+
+#design-container {
+  background-color: var(--yellow);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--yellow);
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
