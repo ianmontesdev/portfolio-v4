@@ -39,9 +39,28 @@ body {
 #design-container {
   position: absolute;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--dark);
   transition: 300ms all ease-in-out;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.web-title {
+  color: var(--yellow, #fdd538);
+  font-family: Ubuntu Mono;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.web-text {
+  color: var(--yellow, #fdd538);
+  font-family: Ubuntu Mono;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #design-container {
@@ -59,4 +78,22 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.profile-pic {
+  border-radius: 20px;
+}
+
+.web-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stack-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3rem;
+  color: var(--yellow);
 }
