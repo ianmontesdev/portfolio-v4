@@ -10,8 +10,17 @@
   box-sizing: border-box;
 }
 
+html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   width: 100vw;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+
   overflow: hidden;
 }
 
