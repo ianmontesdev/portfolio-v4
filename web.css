@@ -13,8 +13,7 @@
 }
 
 #web-container .profile-pic {
-  border-radius: 20px;
-  height: 160px;
+  width: 100vw;
 }
 
 #web-container .text-container {
@@ -99,6 +98,12 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
+  }
+
+  #web-container .profile-pic {
+    border-radius: 20px;
+    width: auto;
+    height: 160px;
   }
 
   #web-container .divisor {

@@ -37,4 +37,34 @@ function changeView() {
       icon.style.color = "var(--yellow)";
     }
   });
+
+  function openModal(url) {
+    if (window.innerWidth >= 1000) {
+      let modal = document.querySelector("#modal");
+      console.log("hola");
+      modal.innerHTML = `
+    <div id="content-modal">
+      <div id="close-btn" ><i class="fa-solid fa-circle-xmark"></i></div>
+      <img class="modal-img" src="${url}" alt="" />
+    </div>
+    `;
+      document
+        .querySelector("#close-btn")
+        .addEventListener("click", closeModal);
+    } else {
+      window.open(url);
+    }
+  }
+
+  function closeModal() {
+    let modal = document.querySelector("#modal");
+    modal.innerHTML = "";
+  }
+
+  document.querySelectorAll(".photo-listener").forEach((photo) => {
+    photo.addEventListener("click", function () {
+      console.log(photo.getAttribute("src"));
+      openModal(photo.getAttribute("src"));
+    });
+  });
 }
