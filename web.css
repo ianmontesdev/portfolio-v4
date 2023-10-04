@@ -67,6 +67,21 @@
   }
 
   #web-container .text-container {
+    overflow-y: scroll;
+    max-height: 75vh;
+    padding-right: 1rem;
+  }
+
+  #web-container .text-container::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #web-container .text-container::-webkit-scrollbar-thumb {
+    background-color: var(--yellow);
+    border-radius: 3px;
+  }
+
+  #web-container .text-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
