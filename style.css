@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url(web.css);
 @import url(design.css);
 
@@ -86,6 +87,13 @@ nav {
 
 @media screen and (min-width: 768px) {
   #web-container {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #design-container {
     align-items: center;
     justify-content: center;
   }
