@@ -2,6 +2,7 @@ const btnSwitch = document
   .querySelector("#btn-switch")
   .addEventListener("click", onSwitch);
 const switchHandler = document.querySelector("#switch-handler");
+const navBar = document.querySelector("nav");
 let isRight = false;
 
 function onSwitch() {
@@ -9,8 +10,10 @@ function onSwitch() {
 
   if (isRight) {
     switchHandler.style.left = "27px";
+    navBar.style.backgroundColor = "var(--yellow)";
   } else {
     switchHandler.style.left = "3px";
+    navBar.style.backgroundColor = "var(--dark)";
   }
   changeView();
 }
