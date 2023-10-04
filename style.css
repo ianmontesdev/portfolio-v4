@@ -1,3 +1,6 @@
+@import url(web.css);
+@import url(design.css);
+
 :root {
   --yellow: #fdd538;
   --dark: #121212;
@@ -56,20 +59,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: scroll;
-}
-
-.web-title {
-  color: var(--yellow, #fdd538);
-  font-family: Ubuntu Mono;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.web-text {
-  color: var(--yellow, #fdd538);
-  font-family: Ubuntu Mono;
-  font-size: 1rem;
-  font-weight: 400;
+  padding-bottom: 60px;
 }
 
 #design-container {
@@ -89,20 +79,9 @@ nav {
   z-index: 1;
 }
 
-.profile-pic {
-  border-radius: 20px;
-}
-
-.web-info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.stack-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 3rem;
-  color: var(--yellow);
+@media screen and (min-width: 768px) {
+  #web-container {
+    align-items: center;
+    justify-content: center;
+  }
 }

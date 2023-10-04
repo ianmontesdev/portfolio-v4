@@ -1,0 +1,109 @@
+#web-container .title {
+  color: var(--yellow, #fdd538);
+  font-family: Ubuntu Mono;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#web-container .text {
+  color: var(--yellow, #fdd538);
+  font-family: Ubuntu Mono;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#web-container .profile-pic {
+  border-radius: 20px;
+  height: 160px;
+}
+
+#web-container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#web-container {
+  background-color: red;
+}
+
+#web-container .stack-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3rem;
+  color: var(--yellow);
+}
+
+#web-container .text-white {
+  color: white;
+}
+
+#web-container .profile-pic {
+  display: flex;
+  flex-direction: column;
+}
+
+#web-container .divisor {
+  display: none;
+}
+
+#web-container .bar-big {
+  display: none;
+}
+
+#web-container .bar-small {
+  display: none;
+}
+
+#web-container .ball {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #web-container .info {
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+  }
+
+  #web-container .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #web-container .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  #web-container .divisor {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: var(--yellow);
+    border-radius: 3px;
+  }
+
+  #web-container .bar-big {
+    display: block;
+    width: 257px;
+  }
+
+  #web-container .bar-small {
+    display: block;
+    width: 207px;
+  }
+
+  #web-container .ball {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: var(--yellow);
+    margin-top: 3rem;
+  }
+}
